@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en" data-theme=light>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEOMATRIC</title>
+    <!-- daisy ui setup -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisy ui set uup end  -->
+</head>
+
+<body class="m-7">
+    <header>
+
+
+    </header>
+    <main>
+        <!-- parents div st -->
+        <div class="flex">
+            <!-- 1st child div st -->
+            <div class="flex-1 grid grid-cols-3">
+                <!-- TRIANGLE -->
+                <div class="card w-72 bg-base-100 shadow-xl">
+                    <figure><img src="triangle.png" alt=""></figure>
+                    <div class="card-body">
+                        <h2 class="card-title justify-center">Triangle</h2>
+                        <p class="text-center text-xl">Area (A) = 0.5 X b X h</p>
+                        <!-- input container -->
+                        <div>
+                            <input id="triangleBase" class="w-20 border-2 border-red-500 rounded-md p-1" type="text" placeholder="b">
+                            <span class="ml-1 mr-1">cm</span>
+                            <input id="triangleHight" class="w-20 border-2 border-red-500 rounded-md p-1" type="text" placeholder="h">
+                            <span>cm</span>
+                            <!-- input container end -->
+
+                            <!-- total value display -->
+                            <p>Area : <span id="totalValueDisplay"> </span>0<span>cm</span><sup>2</sup></p>
+
+                            <!-- !-- total value display end-->
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button onclick=" triangle()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rectangle -->
+                <div class="card w-72 bg-base-100 shadow-lg">
+                    <figure><img  src="rectangle.png" alt=""></figure>
+                    <div class="card-body">
+                        <h2 class="card-title justify-center">Rectangle</h2>
+                        <p class="text-center text-xl">Area (A) = w X l</p>
+                        <!-- input contianer st -->
+                       <div>
+                        <input id="rectangleWidth" class="w-20 border-2 border-red-400 rounded-md p-1" type="text" placeholder="w">
+                        <span class="ml-1 mr-1">cm</span>
+                        <input id="rectangleLenght" class="w-20 border-2 border-red-400 rounded-md p-1" type="text" placeholder="l">
+                        <span>cm</span>
+                       </div>
+                       <p>Area : <span id="rectangleTotalValueDisplay"></span>0<span>cm</span><sup>2</sup></p>
+                       <!-- input container end -->
+                        <div class="card-actions justify-end">
+                            <button onclick="rectangle()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 1 -->
+                <div class="card w-72 bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                            alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 1 -->
+                <div class="card w-72 bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                            alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 1 -->
+                <div class="card w-72 bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                            alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 1 -->
+                <div class="card w-72 bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                            alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 1st child div end -->
+
+            <!-- 2nd child div st -->
+            <div class="w-60 border-2 border-red-700 text-center">
+                <h1 class="mt-5">Area Calculation</h1>
+            </div>
+            <!-- 2nd child div end -->
+        </div>
+        <!-- parents div end -->
+
+        <!-- js script -->
+        <script src="script/triangle.js"></script>
+        <script src="script/rectangle.js"></script>
+        <!--!-- js script -->
+    </main>
+</body>
+
+</html>
